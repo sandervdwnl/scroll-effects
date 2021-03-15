@@ -1,0 +1,60 @@
+/* Normal CSS Transition */
+
+/* #box-2{
+    animation: scale 1s linear 1;
+    animation-fill-mode: forwards;
+}
+@keyframes scale {
+    to {
+        transform: scale(.5);
+    }
+} */
+
+/**
+The whole animation is calculated as 1s.
+The wanimation takes place during 1 scroll.
+If you like to play it twice, change duration to .5s
+Note: section must be scrolled to top of screen in order to work
+else you can work with keyfranes
+
+Source: https://css-tricks.com/books/greatest-css-tricks/scroll-animation/
+*/
+
+/* #box-3{
+    animation: slide 1s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+@keyframes slide { */
+    /* from{
+        transform: translateX(-15%);
+    }
+    to {
+        transform: translateX(0%);
+    } */
+
+     /* 0%{
+        transform: translateX(-15%);
+    }
+    70% {
+        transform: translateX(0%);
+    } 
+    
+} */
+
+#box-4 {
+    animation: fade 1s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+@keyframes fade { 
+    
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+} 
